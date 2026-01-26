@@ -19,6 +19,27 @@
       <div id="unity-warning"> </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+    <script type="module">
+      const firebaseConfig = {
+        apiKey: "AIzaSyB0eN2Kd1KRPBCnbljZqaYhVOmOb_0t3Rg",
+        authDomain: "missim-4cc1d.firebaseapp.com",
+        databaseURL: "https://missim-4cc1d-default-rtdb.firebaseio.com",
+        projectId: "missim-4cc1d",
+        storageBucket: "missim-4cc1d.firebasestorage.app",
+        messagingSenderId: "106205839554",
+        appId: "1:106205839554:web:a8d3d03f5d1691f21b7b5b",
+        measurementId: "G-CNL8HRFJZZ"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -51,15 +72,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/bdvparker.loader.js";
+      var loaderUrl = buildUrl + "/parkervirtualtraining_free_test.loader.js";
       var config = {
-        dataUrl: buildUrl + "/bdvparker.data.br",
-        frameworkUrl: buildUrl + "/bdvparker.framework.js.br",
-        codeUrl: buildUrl + "/bdvparker.wasm.br",
+        dataUrl: buildUrl + "/parkervirtualtraining_free_test.data.br",
+        frameworkUrl: buildUrl + "/parkervirtualtraining_free_test.framework.js.br",
+        codeUrl: buildUrl + "/parkervirtualtraining_free_test.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "MISSIM",
         productName: "Bancada Virtual Parker",
-        productVersion: "1.0.1",
+        productVersion: "1.0.3",
         showBanner: unityShowBanner,
       };
 
